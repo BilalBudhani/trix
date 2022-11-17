@@ -68,12 +68,20 @@ if (process.env.CI) {
       device: "iPhone X Simulator",
       version: "13.0"
     },
-    sl_android_latest: {
+    sl_android_9: {
       base: "SauceLabs",
       browserName: "chrome",
       platform: "android",
       device: "Android GoogleAPI Emulator",
-      version: "10.0"
+      version: "9.0"
+    },
+    sl_android_13: {
+      base: "SauceLabs",
+      browserName: "chrome",
+      platform: "android",
+      "appium:deviceName": "Google.*",
+      "appium:platformVersion": "13",
+      "appium:automationName": "UiAutomator2",
     }
   }
 
